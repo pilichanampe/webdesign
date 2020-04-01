@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+section {
+    position: relative;
+    width: 100%;   
+    padding: 20px 0 150px 0;
+    ;
+}
+
+section.contenedor:nth-child(2n) {
+    background-color: #e2dcdc;
+}
+
+.sobre-nosotros, .porfolio, .clientes, .about-servicio {
+    width: 70%;
+    margin: auto;
+}
+.contenedor {
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+.titulo {
+    color: #935E79;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 600px;
+    background: #556270;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b62a2adc, #1164bdd2), url(../img/Team.svg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b62a2adc, #1164bdd2), url(../img/Team.svg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+}
+
+.nav-menu-item {
+    display: flex;
+    font-weight: 700;
+    margin-right: 50px;
+    padding: 10px;
+
+
+}
+
+.nav-menu-item:hover {
+    color: #ffffff;
+    background-color: #f3b1d363;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+header .textos-header {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+
+}
+
+.textos-header h1 {
+    font-size: 3rem;
+}
+
+.textos-header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.wave {    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*About us*/
+
+.sobre-nosotros{
+    height: 100%;
+    width: 100%;
+    
+    }
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+}
+
+.image-about-us {
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+    
+}
+
+
+
+.sobre-nosotros .contenido-textos {
+
+    width: 500px;
+}
+
+.contenido-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contenido-textos h3 {
+    margin: 10px 0;
+}
+
+.contenido-textos h3 span {
+    background: #e96f83;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 #00000080;
+    margin-right: 10px;
+}
+
+.contenido-textos p {
+    padding: 0 0 30px 15px;
+    text-align: justify;
+}
+
+/*Galería*/
+.contenedor-porfolio {
+    width: 50%;
+    margin: auto;
+}
+.porfolio {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.galeria-port {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.imagen-port {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px 0;
+    box-shadow: 0 0 6px 0 #00000080;
+    border-radius: 10px;
+}
+
+.imagen-port>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.hover-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: linear-gradient(to right, #b62a2adc, #1164bdd2);
+    transition: transform .5s;
+    padding: 30px;
+}
+
+.hover-galeria>img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.hover-galeria>p {
+    color: #FAF3BF;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+    border-radius: 10px;
+}
+
+/*Clientes*/
+
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+
+
+}
+
+
+
+.cards .card {
+    display: flex;
+    background: linear-gradient(to right, #b62a2adc, #1164bdd2);
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 6px #000000ab;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: 3px solid #FAF3BF;
+    border-radius: 50%;
+    display: block;
+    background: #753f48a2;
+
+}
+
+.cards .card>.contenido-texto-card {
+    width: 60%;
+    color: #fff;
+    padding-left: 20px;
+    text-align: left;
+
+}
+
+.contenido-texto-card h4 {
+    color: #FAF3BF;
+    font-size: 1.2rem;
+}
+
+.cards .card>.contenido-texto-card p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/*Our team*/
+.servicio-cont {
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+        
+}
+
+.servicio-ind {
+    width: 300px;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 0 6px 0 #00000080;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.servicio-ind img {
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    object-fit: contain;
+}
+
+.servicio-ind h3 {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: #935E79;
+}
+
+.servicio-ind p {
+    color: #000000;
+}
