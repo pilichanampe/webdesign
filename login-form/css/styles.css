@@ -18,7 +18,7 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	width: 320px;
-	height: 460px;
+	height: 470px;
 	background: #fff;
 	color: #683535;
 	/* qué onda esta solución? es buena práctica?*/
@@ -28,7 +28,7 @@ html, body {
 	transform: translate(-50%, -50%);*/
 	border-radius: 7px;
 	box-shadow: 10px 9px 18px 1px #a8a8a8;
-	padding: 0 40px 30px 40px;
+	padding: 0 40px 20px 40px;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -137,7 +137,7 @@ html, body {
 	text-decoration: none;
 	color: #808080;
 	text-align: center;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	
 }
 
