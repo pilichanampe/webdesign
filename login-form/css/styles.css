@@ -56,14 +56,6 @@ html, body {
 	position: absolute;
 }	
 
-.avatar .background {	
-	background: linear-gradient(to top, #ad5151, #5f7ea0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	position: absolute;
-}
-
 .login-box h1 {
 	padding: 0;
 	text-align: center;
